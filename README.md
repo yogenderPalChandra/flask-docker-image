@@ -14,6 +14,10 @@ docker push yogender027/flask-app:0.0.3
 
 #### some miscellaneous commands:
 docker ps -a  #check all containers
+
 docker stop flask #stop container if faulty
+
 docker rm <ID whcih comes from docker ps -a> #remove container
+
 docker rmi <image ID, comes from docker images>
+
