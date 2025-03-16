@@ -17,8 +17,13 @@ os.environ['MPLCONFIGDIR'] = '/tmp'
 
 #import sqlalchemy
 from flask_sqlalchemy import SQLAlchemy
+from prometheus_flask_exporter import PrometheusMetrics
+
 
 app = Flask(__name__)
+
+
+metrics = PrometheusMetrics(app)
 
 #app.config.from_object(os.environ['APP_SETTINGS'])
 # Set SQLAlchemy configuration
